@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterForm.master.cs" Inherits="Controls_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Header -->
+            <div id="Header">
+                <asp:Label ID="LbAdminLogout" runat="server" Text="Administration Pages: "></asp:Label>
+                <asp:Button ID="BtnAdminLogout" runat="server" Text="Log Out" OnClick="BtnLogout_Click" />
+                <asp:ContentPlaceHolder id="CPHHeader" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- Body -->
+            <div id="ContentMaster">
+                <asp:ContentPlaceHolder id="CPHFormContent" runat="server">
+                    Form Stuff
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <!-- Footer -->
+            <div id="footer">
+                <asp:ContentPlaceHolder id="CPHFooter" runat="server">
+                    This is the footer
+                </asp:ContentPlaceHolder><br />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

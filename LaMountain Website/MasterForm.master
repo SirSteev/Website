@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterForm.master.cs" Inherits="MasterForm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Form Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <!-- Header -->
+            <div id="Header">
+                <h1>BufferUnderrun</h1>
+                <div style="float:right; height:50px; width:10%;">
+                    <asp:Button ID="BtnLogin" runat="server" Text="Login" OnClick="BtnLogin_Click" style="float:right" CausesValidation="false"/>
+                    <asp:Label ID="LbLoginWelcome" runat="server" Text="Welcome"></asp:Label>
+                </div>
+                <br />
+                <asp:ContentPlaceHolder id="CPHHeader" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- NavBar -->
+            <div id="NavBar">
+                <div style="padding:5px;">
+                    Nav bar >> 
+                    <a href="../Default.aspx">Home</a>&nbsp;&nbsp;&nbsp;
+                    <a href="../Contact.aspx">Contact Us</a>&nbsp;&nbsp;&nbsp;
+                    <a href="../About.aspx">About Us</a>&nbsp;&nbsp;&nbsp;
+                    <a href="../Profile.aspx">My Profile</a>
+                </div>
+            </div>
+            <!-- Body -->
+            <div id="ContentMaster">
+                <asp:ContentPlaceHolder id="CPHFormContent" runat="server">
+                    Form Stuff
+                </asp:ContentPlaceHolder>
+            </div>
+            
+            <!-- Footer -->
+            <div id="footer">
+                <asp:ContentPlaceHolder id="CPHFooter" runat="server">
+                </asp:ContentPlaceHolder><br />
+                This is the footer
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

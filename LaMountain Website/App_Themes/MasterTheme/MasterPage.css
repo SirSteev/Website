@@ -1,0 +1,48 @@
+﻿body
+{
+    background-color:rgb(255,255,255);
+    color:black;
+}
+#Header
+{
+    
+}
+
+a:link
+{
+    color:black;
+}
+
+a:visited
+{
+    color:black;
+}
+
+#NavBar
+{
+    height:30px;
+    margin-top:10px;
+    background-color:cornflowerblue;
+}
+#ContentMaster
+{
+    margin-top:10px;
+    display:inline-block;
+    width:100%;
+    background-color:whitesmoke;
+}
+#ContentSideBar
+{
+    width:20%;
+    float:left;
+}
+#ContentMain
+{
+    width:80%;
+    float:right;
+}
+#Footer
+{
+    width:100%;
+    margin-top:10px; 
+}

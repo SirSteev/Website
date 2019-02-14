@@ -1,0 +1,12 @@
+﻿#ColumnLeft
+{
+    float:left;
+    width:20%;
+    margin-left:20%;
+}
+#ColumnRight
+{
+    float:right;
+    width:20%;
+    margin-right:20%;
+}
